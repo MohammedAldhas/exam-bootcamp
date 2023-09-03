@@ -26,10 +26,10 @@ export default function Show() {
   return (
     <>
       <div className="w-full h-screen flex flex-col justify-center items-center">
-        <div className="w-8/12 shadow flex flex-col items-center justify-center p-2 gap-3">
-          <h1 className="text-xl">{cardDet.title}</h1>
-          <img className="w-2/12" src= {cardDet.image}></img>
-          <h3 className="w-2/3">{cardDet.description}</h3>
+        <div className="w-8/12 shadow flex flex-col items-center justify-center p-2 gap-3 rounded">
+          <h1 className="text-xl w-2/3 text-center max-sm:w-full">{cardDet.title}</h1>
+          <img className="w-2/6 max-sm:w-2/5" src= {cardDet.image}></img>
+          <h3 className="w-2/3 max-sm:text-sm max-sm:w-full">{cardDet.description}</h3>
         </div>
 
         <button

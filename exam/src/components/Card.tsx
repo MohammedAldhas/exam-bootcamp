@@ -9,10 +9,10 @@ interface card {
 export default function cards(props: card) {
   return (
     <div>
-      <div className="shadow rounded p-3 w-full h-96 flex flex-col justify-between gap-2 hover:scale-105">
+      <div className="shadow rounded p-3 w-full h-96 flex flex-col justify-between gap-2 hover:scale-95 cursor-pointer">
         <h2>{props.title}</h2>
         <img className="h-2/3" src={props.img}></img>
-        <a  href="#">{props.btn}</a>
+        <a className="text-center" href="#">{props.btn}</a>
       </div>
     </div>
   );
